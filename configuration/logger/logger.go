@@ -11,8 +11,10 @@ var (
 
 func init() {
 	logConfiguration := zap.Config{
-		Level:    zap.NewAtomicLevelAt(zap.InfoLevel),
-		Encoding: "json",
+		Level:            zap.NewAtomicLevelAt(zap.InfoLevel),
+		Encoding:         "json",
+		OutputPaths:      []string{"stdout"},
+		ErrorOutputPaths: []string{"stderr"},
 		EncoderConfig: zapcore.EncoderConfig{
 			MessageKey:   "message",
 			LevelKey:     "level",
@@ -22,8 +24,8 @@ func init() {
 			EncodeCaller: zapcore.ShortCallerEncoder,
 		},
 	}
+
 	log, _ = logConfiguration.Build()
-	// defer log.Sync()
 }
 
 func Info(message string, tags ...zap.Field) {

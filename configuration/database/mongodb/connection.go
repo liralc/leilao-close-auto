@@ -2,11 +2,10 @@ package mongodb
 
 import (
 	"context"
-	"leilao-close-auto/configuration/logger"
-	"os"
-
+	"fullcycle-auction_go/configuration/logger"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
+	"os"
 )
 
 const (
@@ -29,5 +28,6 @@ func NewMongoDBConnection(ctx context.Context) (*mongo.Database, error) {
 		logger.Error("Error trying to ping mongodb database", err)
 		return nil, err
 	}
+
 	return client.Database(mongoDatabase), nil
 }

@@ -1,0 +1,39 @@
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - cmd/auction/.env
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - localNetwork
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    env_file:
+      - cmd/auction/.env
+    volumes:
+      - mongo-data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - localNetwork
+
+volumes:
+  mongo-data:
+    driver: local
+
+networks:
+  localNetwork:
+    driver: bridge
