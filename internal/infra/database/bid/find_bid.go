@@ -3,11 +3,11 @@ package bid
 import (
 	"context"
 	"fmt"
-	"fullcycle-auction_go/configuration/logger"
-	"fullcycle-auction_go/internal/entity/bid_entity"
-	"fullcycle-auction_go/internal/internal_error"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo/options"
+	"leilao-close-auto/configuration/logger"
+	"leilao-close-auto/internal/entity/bid_entity"
+	"leilao-close-auto/internal/internal_error"
 	"time"
 )
 

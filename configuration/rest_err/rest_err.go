@@ -1,7 +1,7 @@
 package rest_err
 
 import (
-	"fullcycle-auction_go/internal/internal_error"
+	"leilao-close-auto/internal/internal_error"
 	"net/http"
 )
 

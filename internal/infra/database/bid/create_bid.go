@@ -2,11 +2,11 @@ package bid
 
 import (
 	"context"
-	"fullcycle-auction_go/configuration/logger"
-	"fullcycle-auction_go/internal/entity/auction_entity"
-	"fullcycle-auction_go/internal/entity/bid_entity"
-	"fullcycle-auction_go/internal/infra/database/auction"
-	"fullcycle-auction_go/internal/internal_error"
+	"leilao-close-auto/configuration/logger"
+	"leilao-close-auto/internal/entity/auction_entity"
+	"leilao-close-auto/internal/entity/bid_entity"
+	"leilao-close-auto/internal/infra/database/auction"
+	"leilao-close-auto/internal/internal_error"
 	"sync"
 	"time"
 

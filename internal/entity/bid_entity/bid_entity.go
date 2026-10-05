@@ -2,8 +2,8 @@ package bid_entity
 
 import (
 	"context"
-	"fullcycle-auction_go/internal/internal_error"
 	"github.com/google/uuid"
+	"leilao-close-auto/internal/internal_error"
 	"time"
 )
 

@@ -3,11 +3,11 @@ package auction
 import (
 	"context"
 	"fmt"
-	"fullcycle-auction_go/configuration/logger"
-	"fullcycle-auction_go/internal/entity/auction_entity"
-	"fullcycle-auction_go/internal/internal_error"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
+	"leilao-close-auto/configuration/logger"
+	"leilao-close-auto/internal/entity/auction_entity"
+	"leilao-close-auto/internal/internal_error"
 	"time"
 )
 

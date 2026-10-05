@@ -2,10 +2,10 @@ package bid_controller
 
 import (
 	"context"
-	"fullcycle-auction_go/configuration/rest_err"
-	"fullcycle-auction_go/internal/infra/api/web/validation"
-	"fullcycle-auction_go/internal/usecase/bid_usecase"
 	"github.com/gin-gonic/gin"
+	"leilao-close-auto/configuration/rest_err"
+	"leilao-close-auto/internal/infra/api/web/validation"
+	"leilao-close-auto/internal/usecase/bid_usecase"
 	"net/http"
 )
 

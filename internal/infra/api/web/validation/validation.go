@@ -3,12 +3,12 @@ package validation
 import (
 	"encoding/json"
 	"errors"
-	"fullcycle-auction_go/configuration/rest_err"
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/locales/en"
 	ut "github.com/go-playground/universal-translator"
 	"github.com/go-playground/validator/v10"
 	validator_en "github.com/go-playground/validator/v10/translations/en"
+	"leilao-close-auto/configuration/rest_err"
 )
 
 var (

@@ -2,7 +2,7 @@ package auction
 
 import (
 	"context"
-	"fullcycle-auction_go/internal/entity/auction_entity"
+	"leilao-close-auto/internal/entity/auction_entity"
 	"os"
 	"testing"
 	"time"

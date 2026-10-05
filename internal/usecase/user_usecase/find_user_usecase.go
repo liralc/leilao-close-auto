@@ -2,8 +2,8 @@ package user_usecase
 
 import (
 	"context"
-	"fullcycle-auction_go/internal/entity/user_entity"
-	"fullcycle-auction_go/internal/internal_error"
+	"leilao-close-auto/internal/entity/user_entity"
+	"leilao-close-auto/internal/internal_error"
 )
 
 func NewUserUseCase(userRepository user_entity.UserRepositoryInterface) UserUseCaseInterface {

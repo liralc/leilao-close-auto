@@ -2,10 +2,10 @@ package user_controller
 
 import (
 	"context"
-	"fullcycle-auction_go/configuration/rest_err"
-	"fullcycle-auction_go/internal/usecase/user_usecase"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
+	"leilao-close-auto/configuration/rest_err"
+	"leilao-close-auto/internal/usecase/user_usecase"
 	"net/http"
 )
 

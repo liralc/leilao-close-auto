@@ -3,9 +3,9 @@ package auction
 import (
 	"context"
 	"fmt"
-	"fullcycle-auction_go/configuration/logger"
-	"fullcycle-auction_go/internal/entity/auction_entity"
-	"fullcycle-auction_go/internal/internal_error"
+	"leilao-close-auto/configuration/logger"
+	"leilao-close-auto/internal/entity/auction_entity"
+	"leilao-close-auto/internal/internal_error"
 	"os"
 	"time"
 

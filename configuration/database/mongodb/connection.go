@@ -2,9 +2,9 @@ package mongodb
 
 import (
 	"context"
-	"fullcycle-auction_go/configuration/logger"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
+	"leilao-close-auto/configuration/logger"
 	"os"
 )
 
